@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 16px 32px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 1.75rem;
+}
+
+.bill-split {
+    margin: 0 auto;
+    max-width: 750px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    align-items: center;
+}
+
+.bill-split > div {
+    width: 100%;
+}
+
+.bill-input {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: #7C4BFF;
+    font-size: 1.25rem;
+}
+
+.bill-input .input-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    /* overflow: hidden; */
+    padding: 5px 0;
+}
+
+.bill-input .bill {
+}
+
+.bill-input input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.bill-input .custom-tip {
+    margin-top: 16px;
+    background-color: #CCCCCC;
+    padding: 8px;
+    font-size: 0.9rem;
+    color: grey
+}
+
+.bill-input .people {
+    margin-top: 16px;
+}
+
+.bill-input .generate-bill {
+    margin-top: 16px;
+}
+
+.bill-input .generate-bill button {
+    width: 100%;
+}
+
+.bill-input .people input {
+    background-color: #CCCCCC;
+    margin-top: 16px;
+    background-color: #CCCCCC;
+    padding: 10px;
+    font-size: 1rem;
+    color: grey
+
+}
+
+.bill-input .tip-buttons {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.tip-buttons .tip-button.active {
+    border: 2px solid black;
+}
+
+.bill-input button {
+    background-color: #9C60FF;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.input-container span {
+    margin-left: 12px;
+}
+
+.input-container input{
+    border: none;
+    outline: none;
+    padding-left: 8px;
+    font-size: 1.25rem;
+    color: inherit
+}
+
+.bill-output {
+    width: 350px;
+    background-color: #34568B;
+    border-radius: 10px;
+    padding: 50px 24px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.bill-output .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.bill-output .amount {
+    color: #C39FFF;
+    font-size: 1.5rem;
+}
+
+button {
+    /* width: 100%; */
+    padding: 16px 24px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.reset-btn-con button {
+    width: 100%;
+}

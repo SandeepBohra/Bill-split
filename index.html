@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bill Splitter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Bill Split</h2>
+      <div class="bill-split">
+        <div class="bill-input">
+          <div class="input-title">Bill</div>
+          <div class="input-container">
+            <span class="rupee">₹</span>
+            <input type="number" name="" id="bill-amount" />
+          </div>
+          <div class="tip-options">
+            <div class="input-title">Select Tip</div>
+            <div class="tip-buttons">
+              <button class="tip-button">5%</button
+              ><button class="tip-button">10%</button
+              ><button class="tip-button">15%</button
+              ><button class="tip-button">25%</button
+              ><button class="tip-button">50%</button
+              ><button class="tip-button">75%</button>
+            </div>
+            <div class="custom-tip">
+              <input
+                type="number"
+                name=""
+                id="custom-tip-input"
+                placeholder="Custom Tip"
+              />
+            </div>
+            <div class="people">
+              <div class="number-of-people">Number of People</div>
+              <input
+                type="number"
+                name=""
+                id="number-of-people"
+                placeholder="No of people"
+              />
+            </div>
+            <div class="generate-bill">
+              <button>Generate Bill</button>
+            </div>
+          </div>
+        </div>
+        <div class="bill-output">
+          <div class="title tip-amount">
+            <div class="label">Tip Amount</div>
+            <div class="amount" id="tip-amount"></div>
+          </div>
+          <div class="title total-bill">
+            <div class="label">Total</div>
+            <div class="amount" id="total-bill"></div>
+          </div>
+          <div class="title each-person-bill">
+            <div class="label">Each person bill</div>
+            <div class="amount" id="bill-per-person"></div>
+          </div>
+          <div class="reset-btn-con">
+            <button id="reset-button" class="button">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
