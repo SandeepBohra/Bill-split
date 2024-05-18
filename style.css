@@ -25,7 +25,7 @@ h2 {
 
 .bill-split {
     margin: 0 auto;
-    max-width: 750px;
+    max-width: 700px;
     display: flex;
     justify-content: center;
     gap: 24px;
@@ -37,7 +37,6 @@ h2 {
 }
 
 .bill-input {
-    max-width: 350px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -125,7 +124,6 @@ h2 {
 }
 
 .bill-output {
-    width: 350px;
     background-color: #34568B;
     border-radius: 10px;
     padding: 50px 24px;
@@ -160,4 +158,10 @@ button {
 
 .reset-btn-con button {
     width: 100%;
+}
+
+@media(max-width: 550px) {
+    .bill-split {
+        flex-direction: column;
+    }
 }
